@@ -6,6 +6,8 @@ This portfolio entry is currently incomplete, but it is meant to eventually be a
 	* non-destructively navigate the database,
 	* submit requests to the server for creating, reading, updating, or destroying tables and entries in the database, and
 	* see the server's responses to the requests.
-* The server reacts to the requests from the end user, by 1) performing the requested action if appropriate and 2) sending an appropriate response to the client.
+* The server reacts to the requests from the end user, by:
+	* performing the requested action if appropriate and
+	* sending an appropriate response to the client.
 
 > Note: There are some features that a real-world system should have, but that I am regarding as beyond the scope of what this portfolio entry is meant to be. Examples of such features are efficiency, robustness against malicious agents, input validation, end-to-end encryption, and the ability to serve multiple clients at once.
