@@ -1,0 +1,7 @@
+%h2
+	Are you sure you want to delete "
+	&= SafeString.lower(name)
+	"?
+%form{ method: 'post' }
+	%button{ type: 'submit' } No
+	%button{ type: 'submit', name: 'confirmed' } Yes

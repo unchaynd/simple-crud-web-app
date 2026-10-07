@@ -10,4 +10,4 @@ This portfolio entry is currently incomplete, but it is meant to eventually be a
 	* performing the requested action if appropriate and
 	* sending an appropriate response to the client.
 
-> Note: There are some features that a real-world system should have, but that I am regarding as beyond the scope of what this portfolio entry is meant to be. Examples of such features are efficiency, robustness against malicious agents, input validation, end-to-end encryption, and the ability to serve multiple clients at once.
+> Note: There are some features that a real-world system should have, but that I am regarding as beyond the scope of what this portfolio entry is meant to be. Examples of such features are efficiency, robustness against malicious agents, thorough input validation, end-to-end encryption, and the ability to serve multiple clients at once.

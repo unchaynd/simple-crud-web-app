@@ -1,0 +1,19 @@
+%h2
+	&= SafeString.lower(name)
+
+%a{href: "/table/#{name}/edit"} Edit
+%a{href: "/table/#{name}/delete"} Delete
+%a{href: "/table/#{name}/new"} Create New Entry
+%br
+&= data.inspect
+
+%table{style: 'border-collapse: collapse'}
+	%tr
+		- data[:columns].each do |column|
+			%th{style: 'border: 1px solid black'}
+				&= column[:name]
+	- data[:rows].each do |row|
+		%tr
+			- row.each do |value|
+				%td{style: 'border: 1px solid black'}
+					&= value

@@ -1,0 +1,14 @@
+!!! 5
+%html{lang: 'en'}
+	%head
+		%title Julian's Database Manager
+		!= haml :external_dependencies
+	%body
+		%header
+			%h1 Julian's Database Manager
+			%nav
+				%a{href: '/'} Home
+				%a{href: '/new'} Create New Table
+		%main
+			!= yield
+

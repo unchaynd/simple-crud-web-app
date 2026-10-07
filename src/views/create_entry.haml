@@ -1,0 +1,15 @@
+%h2
+	New Entry for
+	&= SafeString.lower(name)
+
+&= columns.inspect
+
+%form{ method: 'post' }
+	%fieldset
+		- columns.each do |column|
+			%label
+				&= SafeString.lower(column[:name])
+				%input{ type: 'text', name: 'entry-%s' % column[:name] }
+			%br
+
+	%button{ type: 'submit' } Create Entry

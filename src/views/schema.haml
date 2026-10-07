@@ -1,0 +1,6 @@
+%h2 My tables:
+%ul
+	- DB.table_names.each do |name|
+		%li
+			%a{href: "/table/#{name}"}
+				&= SafeString.lower(name)

@@ -1,0 +1,25 @@
+%script{ src: '/create_table.js' }
+
+%form#new-table-form{ method: 'post' }
+	%h2 New Table
+	%label
+		Name
+		%input{ name: 'name', type: 'text', autocomplete: 'off' }(required)
+	%fieldset
+		%legend Columns
+		%ul#col-list
+		%button#add-col{ type: 'button' } Add Column
+	%button{ type: 'submit' } Create Table
+
+%li#col-template(hidden inert)
+	%label
+		Name
+		%input{ name: 'name', type: 'text', autocomplete: 'off' }(required)
+	%label
+		Type
+		%select{ name: 'type' }
+			- %w{ Text Numeric Integer Real Blob }.each do |option|
+				%option{ value: option.upcase }= option
+	%button.discard{ type: 'button' } Discard
+	%button.move-up{ type: 'button' } Move Up
+	%button.move-down{ type: 'button' } Move Down
